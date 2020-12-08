@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container} >
-      <Text style={styles.title}>LAWnI</Text>
+      <Text style={styles.title}>LAWnI Sch</Text>
     </View>
   );
 }
