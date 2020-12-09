@@ -1,13 +1,14 @@
 import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import { DateObject } from "react-native-calendars";
 
 const image = { uri: "https://reactjs.org/logo-og.png" };
 
-const Home = () => (
+const Home = ({ text}:IHome) => (
   <View style={styles.container}>
-    <ImageBackground source={image} style={styles.image}>
-      <Text style={styles.text}>Inside</Text>
-    </ImageBackground>
+    <ImageBackground source={image} style={styles.image}></ImageBackground>
+      <Text style={styles.text}>{text}</Text>
+      {/* {console.log("OJO na re o:", date)} */}
   </View>
 );
 
@@ -31,3 +32,9 @@ const styles = StyleSheet.create({
 });
 
 export default Home;
+
+
+interface IHome{
+  text:string,
+  // date:DateObject
+}

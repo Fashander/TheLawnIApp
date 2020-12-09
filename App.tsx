@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {Calendar, CalendarList, Agenda, DateObject} from "react-native-calendars";
+import Home from "./src/components/screen/homepage";
 
+// const [open, setOpen]=useState(false);
+// const [date, setDate]=useState<DateObject>()
+
+// const HandlePress=(day:DateObject)=>{
+//   setDate(day)
+// }
 export default function App() {
   return (
     <View style={styles.container} >
-      <Text style={styles.title}>LAWnI Sch</Text>
+      <Text style={styles.title}>LAWI</Text>
+      <Calendar current={'2021-01-01'} onDayPress={(day) => console.log(day)}/>
+      {console.log("Hello how are o")}
+      <Home text="Samuel getting it finally"/>
     </View>
   );
 }
