@@ -27,6 +27,6 @@ export default function App() {
 
 const styles =StyleSheet.create({
   tab:{
-    fontSize:14,
+    fontSize:28,
   }
 })

@@ -8,8 +8,7 @@ const Main = () => {
     return (
       <View style={styles.container} >
           <Header header="Lawyerly" childHeader="Everyday children saved"/>
-          <Text style={styles.title}>LAWINA</Text>
-          <Calendar current={'2021-01-01'} onDayPress={(day) => console.log(day)}/>
+          <Calendar style={styles.calendar} current={'2021-01-01'} onDayPress={(day) => console.log(day)}/>
           {console.log("Hello how are o")}
           
      </View>
@@ -30,6 +29,12 @@ const styles = StyleSheet.create({
       color:"white",
       fontSize:34,
       fontWeight:"700",
+    },
+    calendar:{
+      width:"100%",
+      alignContent:"center",
+      justifyContent:"center",
+      // padding:"10%"
     }
   });
   
