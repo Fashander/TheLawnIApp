@@ -1,13 +1,17 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import { DateObject, Calendar } from "react-native-calendars";
- 
+import Header from "../../headerNav";
+
+
 const Main = () => {
     return (
       <View style={styles.container} >
-          <Text style={styles.title}>LAWI</Text>
+          <Header header="Lawyerly" childHeader="Everyday children saved"/>
+          <Text style={styles.title}>LAWINA</Text>
           <Calendar current={'2021-01-01'} onDayPress={(day) => console.log(day)}/>
           {console.log("Hello how are o")}
+          
      </View>
     );
 };
